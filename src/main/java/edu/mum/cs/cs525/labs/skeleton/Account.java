@@ -85,4 +85,8 @@ public class Account {
 			entryList.add(entry);
 		}
 	}
+
+	public double computeInterest() {
+		return getAccountType().computeInterest(getBalance());
+	}
 }

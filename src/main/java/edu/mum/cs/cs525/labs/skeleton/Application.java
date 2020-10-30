@@ -22,6 +22,16 @@ public class Application {
 		// show balances
 		accountService.addInterestToAllAccounts();
 
+		acc1 = new P1(acc1);
+		acc1 = new P2(acc1);
+		acc1 = new P3(acc1);
+		System.out.println(acc1.computeInterest());
+
+		acc2 = new P1(acc2);
+		acc2 = new P2(acc2);
+		acc2 = new P3(acc2);
+		System.out.println(acc2.computeInterest());
+
 		for (Account account : accountService.getAllAccounts()) {
 			Customer customer = account.getCustomer();
 			System.out.println("Statement for Account: " + account.getAccountNumber());
